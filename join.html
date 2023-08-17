@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://gitee.com/monksoul/LayX/raw/dev/dist/layx.min.css">
+    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <script src="https://gitee.com/monksoul/LayX/raw/dev/dist/layx.min.js"></script>
+    <link rel="shortcut icon" href="https://haloged.github.io/haloged1/logo001.ico" type="image/x-icon">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        .center{
+            text-align: center;
+        }
+    </style>
+    <title>加入Haloged Studio公共邮箱内测</title>
 </head>
-<body>
-    <p>您已成功加入内侧！请<a href="mailto:github@haloged-studio.eu.org">点击这里</a>发送“激活邮件 code=你的code”以激活邮箱。</p>
-    <p>如无法点击，请发送邮件至github@haloged-studio.eu.org。</p>
+<body class="center">
+    <h1 class="text-info">Haloged Studio 公共邮箱</h1>
+</br>
+    <button type="button" class="btn btn-primary" onclick="join()">加入Haloged Studio公共邮箱内测</button>
+    <p style="background:none;height: 5%;position: fixed;bottom: 0px;width: 100%;text-align: center;">Copyright 2023 haloged Studio All rights reserved</p>
+    
 </body>
 <script>
     function join(){
-        var code = window.location.search;
+        swal("您已成功加入内测！请发送邮件至github@haloged-studio.eu.org激活账户。\n格式：激活邮件 code=你的code")
     }
 </script>
 </html>
