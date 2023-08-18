@@ -29,5 +29,22 @@
     function join(){
         swal("您已成功加入内测！请发送邮件至github@haloged-studio.eu.org激活账户。\n格式：激活邮件 code=你的code")
     }
+    function getQueryStr(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    }
+    var url = new URL(window.location.href);
+    url.searchParams.append("user","null");
+    var code=getQueryStr("code")
+    if(code=="bacc459b3ad3a6bcf991b6715b1ef62d"){
+        console.log("验证code成功")
+    }
+    else{
+        window.location.href="./code_null.html"
+    }
 </script>
 </html>
